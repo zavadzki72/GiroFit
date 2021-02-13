@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Hv5HCD2flf0zDO5E1t4BjrmoQza9sMwwTLCwPmDGkNS7cezGvs7BVggQSetgrfDPQmn0Y5ZTLWW6q+4sxpMMFQ==",
+  "dgSpecHash": "U6f8aormYsqjAzZBPuH7/MPn4r9VKgFZCob3j3RwpF5UJli6pixbfKk07Qwj2CGr/m39TVptrrqwtwf+6u3qbw==",
   "success": true,
   "projectFilePath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marccustramontin\\.nuget\\packages\\fluentvalidation\\9.3.0\\fluentvalidation.9.3.0.nupkg.sha512",
-    "C:\\Users\\marccustramontin\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
+    "C:\\Users\\marccustramontin\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\marccustramontin\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
   "logs": []
 }

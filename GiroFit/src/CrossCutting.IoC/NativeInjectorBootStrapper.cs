@@ -1,9 +1,13 @@
 ﻿using ApplicationService.AutoMapper;
+using ApplicationService.Interfaces;
+using ApplicationService.Services;
 using AutoMapper;
 using CrossCutting.Bus;
 using Data.PostgreSQL.Context;
+using Data.PostgreSQL.Repositories;
 using Domain.Core.Bus;
 using Domain.Core.Notifications;
+using Domain.Interfaces.PostgreSql.Repositories;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
@@ -31,7 +35,7 @@ namespace CrossCutting.IoC {
             services.AddSingleton(mapper);
 
             // ApplicationService
-
+            services.AddScoped<IUserApplicationService, UserApplicationService>();
 
             // Domain Bus (Mediator)
             services.AddScoped<IMediatorHandler, InMemoryBus>();
@@ -47,6 +51,9 @@ namespace CrossCutting.IoC {
             services.AddDbContext<ApplicationDbContext>(options => {
                 options.UseNpgsql(connectionString);
             });
+
+            // Repositories - PgSQL
+            services.AddScoped<IUserRepository, UserRepository>();
 
         }
 

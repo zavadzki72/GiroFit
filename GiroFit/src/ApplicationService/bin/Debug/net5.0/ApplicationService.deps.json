@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v5.0": {
       "ApplicationService/1.0.0": {
         "dependencies": {
-          "AutoMapper": "10.1.1"
+          "AutoMapper": "10.1.1",
+          "Domain": "1.0.0"
         },
         "runtime": {
           "ApplicationService.dll": {}
@@ -26,8 +27,50 @@
           }
         }
       },
+      "FluentValidation/9.3.0": {
+        "runtime": {
+          "lib/net5.0/FluentValidation.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.3.0.0"
+          }
+        }
+      },
+      "MediatR/9.0.0": {
+        "runtime": {
+          "lib/netstandard2.1/MediatR.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.0.0"
+          }
+        }
+      },
       "Microsoft.CSharp/4.7.0": {},
-      "System.Reflection.Emit/4.7.0": {}
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
+      "System.Reflection.Emit/4.7.0": {},
+      "Domain/1.0.0": {
+        "dependencies": {
+          "Domain.Core": "1.0.0",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "Domain.dll": {}
+        }
+      },
+      "Domain.Core/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "9.3.0",
+          "MediatR": "9.0.0"
+        },
+        "runtime": {
+          "Domain.Core.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -43,6 +86,20 @@
       "path": "automapper/10.1.1",
       "hashPath": "automapper.10.1.1.nupkg.sha512"
     },
+    "FluentValidation/9.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-C44l6Ih+YwpED/TsXfl6LIq6Z4wLXahstnr6T70uUg1Hs7/bLBKKAo9Nl0sLhVjDE8TA+fF+O3IM4nDrwabcSQ==",
+      "path": "fluentvalidation/9.3.0",
+      "hashPath": "fluentvalidation.9.3.0.nupkg.sha512"
+    },
+    "MediatR/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8b3UYNxegHVYcJMG2zH8wn+YqxLvXG+eMfj0cMCq/jTW72p6O3PCKMkrIv0mqyxdW7bA4gblsocw7n+/9Akg5g==",
+      "path": "mediatr/9.0.0",
+      "hashPath": "mediatr.9.0.0.nupkg.sha512"
+    },
     "Microsoft.CSharp/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -50,12 +107,29 @@
       "path": "microsoft.csharp/4.7.0",
       "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
     "System.Reflection.Emit/4.7.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-VR4kk8XLKebQ4MZuKuIni/7oh+QGFmZW3qORd1GvBq/8026OpW501SzT/oypwiQl4TvT8ErnReh/NzY9u+C6wQ==",
       "path": "system.reflection.emit/4.7.0",
       "hashPath": "system.reflection.emit.4.7.0.nupkg.sha512"
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Domain.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

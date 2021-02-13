@@ -33,7 +33,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain\\Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -468,6 +472,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

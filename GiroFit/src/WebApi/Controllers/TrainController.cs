@@ -11,9 +11,9 @@ using WebApi.Controllers.Base;
 namespace WebApi.Controllers {
 
     [Route("[controller]")]
-    public class TreinoController : ApiController {
+    public class TrainController : ApiController {
 
-        public TreinoController(
+        public TrainController(
             INotificationHandler<DomainNotification> notifications, 
             IMediatorHandler bus
         ) : base(notifications, bus) {

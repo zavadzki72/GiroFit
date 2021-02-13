@@ -1,10 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using ApplicationService.ViewModels.Request.User;
+using ApplicationService.ViewModels.Response;
 using System.Threading.Tasks;
 
 namespace ApplicationService.Interfaces {
+
     public interface IUserApplicationService {
+
+        Task<UserResponseViewModel> GetById(int id);
+
+        Task<UserResponseViewModel> Create(CreateUserViewModel userViewModel);
     }
 }

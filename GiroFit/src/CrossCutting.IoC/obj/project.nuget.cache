@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tWAFuynXWuc/X73mvXKy0lp754sgduvGcKVZrgUTYXuutZzcCa7gJpsf0gxjg6kVZ9McX7UJLj90S4YKEPOn+Q==",
+  "dgSpecHash": "M01f9XGFuPCY3RLN3KPH5wPeMpr/hg9+7vNxeMa5KbhkfTCWsUPHKwIa+nHknf05pgH7PRfQt1bv/pYqnxgxOw==",
   "success": true,
   "projectFilePath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\CrossCutting.IoC\\CrossCutting.IoC.csproj",
   "expectedPackageFiles": [
@@ -50,7 +50,7 @@
     "C:\\Users\\marccustramontin\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.0.1\\microsoft.netcore.platforms.1.0.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\1.0.1\\microsoft.netcore.targets.1.0.1.nupkg.sha512",
-    "C:\\Users\\marccustramontin\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
+    "C:\\Users\\marccustramontin\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\marccustramontin\\.nuget\\packages\\npgsql\\5.0.2\\npgsql.5.0.2.nupkg.sha512",
     "C:\\Users\\marccustramontin\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\5.0.2\\npgsql.entityframeworkcore.postgresql.5.0.2.nupkg.sha512",
     "C:\\Users\\marccustramontin\\.nuget\\packages\\runtime.native.system\\4.0.0\\runtime.native.system.4.0.0.nupkg.sha512",
@@ -61,7 +61,6 @@
     "C:\\Users\\marccustramontin\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\marccustramontin\\.nuget\\packages\\system.diagnostics.debug\\4.0.11\\system.diagnostics.debug.4.0.11.nupkg.sha512",
     "C:\\Users\\marccustramontin\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
-    "C:\\Users\\marccustramontin\\.nuget\\packages\\system.diagnostics.tools\\4.0.1\\system.diagnostics.tools.4.0.1.nupkg.sha512",
     "C:\\Users\\marccustramontin\\.nuget\\packages\\system.dynamic.runtime\\4.0.11\\system.dynamic.runtime.4.0.11.nupkg.sha512",
     "C:\\Users\\marccustramontin\\.nuget\\packages\\system.globalization\\4.0.11\\system.globalization.4.0.11.nupkg.sha512",
     "C:\\Users\\marccustramontin\\.nuget\\packages\\system.io\\4.1.0\\system.io.4.1.0.nupkg.sha512",
@@ -84,16 +83,11 @@
     "C:\\Users\\marccustramontin\\.nuget\\packages\\system.runtime.handles\\4.0.1\\system.runtime.handles.4.0.1.nupkg.sha512",
     "C:\\Users\\marccustramontin\\.nuget\\packages\\system.runtime.interopservices\\4.1.0\\system.runtime.interopservices.4.1.0.nupkg.sha512",
     "C:\\Users\\marccustramontin\\.nuget\\packages\\system.runtime.interopservices.runtimeinformation\\4.0.0\\system.runtime.interopservices.runtimeinformation.4.0.0.nupkg.sha512",
-    "C:\\Users\\marccustramontin\\.nuget\\packages\\system.runtime.serialization.primitives\\4.1.1\\system.runtime.serialization.primitives.4.1.1.nupkg.sha512",
     "C:\\Users\\marccustramontin\\.nuget\\packages\\system.text.encoding\\4.0.11\\system.text.encoding.4.0.11.nupkg.sha512",
-    "C:\\Users\\marccustramontin\\.nuget\\packages\\system.text.encoding.extensions\\4.0.11\\system.text.encoding.extensions.4.0.11.nupkg.sha512",
     "C:\\Users\\marccustramontin\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512",
-    "C:\\Users\\marccustramontin\\.nuget\\packages\\system.text.regularexpressions\\4.1.0\\system.text.regularexpressions.4.1.0.nupkg.sha512",
     "C:\\Users\\marccustramontin\\.nuget\\packages\\system.threading\\4.0.11\\system.threading.4.0.11.nupkg.sha512",
     "C:\\Users\\marccustramontin\\.nuget\\packages\\system.threading.tasks\\4.0.11\\system.threading.tasks.4.0.11.nupkg.sha512",
-    "C:\\Users\\marccustramontin\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.1\\system.threading.tasks.extensions.4.5.1.nupkg.sha512",
-    "C:\\Users\\marccustramontin\\.nuget\\packages\\system.xml.readerwriter\\4.0.11\\system.xml.readerwriter.4.0.11.nupkg.sha512",
-    "C:\\Users\\marccustramontin\\.nuget\\packages\\system.xml.xdocument\\4.0.11\\system.xml.xdocument.4.0.11.nupkg.sha512"
+    "C:\\Users\\marccustramontin\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.1\\system.threading.tasks.extensions.4.5.1.nupkg.sha512"
   ],
   "logs": []
 }

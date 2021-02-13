@@ -4,6 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace WebApi.Controllers {
-    public class ExercicioController {
+    public class ExerciseController {
     }
 }

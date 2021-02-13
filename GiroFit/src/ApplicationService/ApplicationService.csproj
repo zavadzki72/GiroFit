@@ -5,12 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
-    <Folder Include="ViewModels\Request\" />
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
 
 </Project>
