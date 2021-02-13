@@ -1,0 +1,12 @@
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\CrossCutting.Bus\bin\Debug\netcoreapp3.1\CrossCutting.Bus.deps.json
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\CrossCutting.Bus\bin\Debug\netcoreapp3.1\CrossCutting.Bus.dll
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\CrossCutting.Bus\bin\Debug\netcoreapp3.1\CrossCutting.Bus.pdb
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\CrossCutting.Bus\bin\Debug\netcoreapp3.1\Domain.Core.dll
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\CrossCutting.Bus\bin\Debug\netcoreapp3.1\Domain.Core.pdb
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\CrossCutting.Bus\obj\Debug\netcoreapp3.1\CrossCutting.Bus.csprojAssemblyReference.cache
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\CrossCutting.Bus\obj\Debug\netcoreapp3.1\CrossCutting.Bus.AssemblyInfoInputs.cache
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\CrossCutting.Bus\obj\Debug\netcoreapp3.1\CrossCutting.Bus.AssemblyInfo.cs
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\CrossCutting.Bus\obj\Debug\netcoreapp3.1\CrossCutting.Bus.csproj.CoreCompileInputs.cache
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\CrossCutting.Bus\obj\Debug\netcoreapp3.1\CrossCutting.Bus.csproj.CopyComplete
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\CrossCutting.Bus\obj\Debug\netcoreapp3.1\CrossCutting.Bus.dll
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\CrossCutting.Bus\obj\Debug\netcoreapp3.1\CrossCutting.Bus.pdb

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ZxXbxbb7U6CW7DooBKctU869e2v0g/3k/LE1lQ9Q47jOIW3nxPvMMJxmKDBbthhDdlp0ZpawofiWdd6EgCrb8g==",
+  "dgSpecHash": "PwOGxAgB740hkNxCpFmfFARIdin+gTpyNDUv2vioD61ya5hdfa3Z6e3tfh9qE9LrXvyC9DRUzOliJzbjgcjn+A==",
   "success": true,
   "projectFilePath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\ApplicationService\\ApplicationService.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\marccustramontin\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\marccustramontin\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\marccustramontin\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

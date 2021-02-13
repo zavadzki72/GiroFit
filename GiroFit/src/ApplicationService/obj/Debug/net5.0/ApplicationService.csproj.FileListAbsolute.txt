@@ -1,0 +1,11 @@
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\ApplicationService\bin\Debug\net5.0\ApplicationService.deps.json
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\ApplicationService\bin\Debug\net5.0\ApplicationService.dll
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\ApplicationService\bin\Debug\net5.0\ref\ApplicationService.dll
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\ApplicationService\bin\Debug\net5.0\ApplicationService.pdb
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\ApplicationService\obj\Debug\net5.0\ApplicationService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\ApplicationService\obj\Debug\net5.0\ApplicationService.AssemblyInfoInputs.cache
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\ApplicationService\obj\Debug\net5.0\ApplicationService.AssemblyInfo.cs
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\ApplicationService\obj\Debug\net5.0\ApplicationService.csproj.CoreCompileInputs.cache
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\ApplicationService\obj\Debug\net5.0\ApplicationService.dll
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\ApplicationService\obj\Debug\net5.0\ref\ApplicationService.dll
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\ApplicationService\obj\Debug\net5.0\ApplicationService.pdb
