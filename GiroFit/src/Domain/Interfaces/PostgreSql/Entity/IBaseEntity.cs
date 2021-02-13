@@ -1,12 +1,8 @@
-﻿using System;
+﻿namespace Domain.Interfaces.PostgreSql.Entity {
 
-namespace Domain.Interfaces.PostgreSql.Entity {
-
-    public interface IBaseEntity {
+    public interface IBaseEntityWihoutDate {
 
         int Id { get; set; }
-        DateTime CreationDate { get; set; }
-        DateTime UpdateDate { get; set; }
 
     }
 }

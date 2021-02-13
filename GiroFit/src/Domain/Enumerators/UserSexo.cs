@@ -1,8 +1,4 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using System.Runtime.Serialization;
-
-namespace Domain.Enumerators {
+﻿namespace Domain.Enumerators {
 
     public enum UserSexo {
 

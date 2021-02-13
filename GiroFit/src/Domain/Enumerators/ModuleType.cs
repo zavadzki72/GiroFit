@@ -2,8 +2,9 @@
 
     public enum ModuleType {
 
-        TIPO_1,
-        TIPO_2
+        GYM,
+        HOME,
+        DESAFIO
 
     }
 }

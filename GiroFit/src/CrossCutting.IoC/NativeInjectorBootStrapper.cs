@@ -54,6 +54,9 @@ namespace CrossCutting.IoC {
 
             // Repositories - PgSQL
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<ITemplateModuleRepository, TemplateModuleRepository>();
+            services.AddScoped<ITemplateTrainRepository, TemplateTrainRepository>();
+            services.AddScoped<ITemplateExerciseRepository, TemplateExerciseRepository>();
 
         }
 

@@ -27,33 +27,19 @@ namespace Data.PostgreSQL.Migrations
                         .HasColumnName("id")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<string>("BreakTime")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("break_time");
-
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("timestamp without time zone")
                         .HasColumnName("dta_creation");
 
-                    b.Property<int>("Frequecy")
-                        .HasColumnType("integer")
-                        .HasColumnName("frequecy");
+                    b.Property<int>("IdTemplateExercise")
+                        .HasColumnType("integer");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)")
-                        .HasColumnName("name");
+                    b.Property<int>("IdTrain")
+                        .HasColumnType("integer");
 
-                    b.Property<int>("Sets")
-                        .HasColumnType("integer")
-                        .HasColumnName("sets");
-
-                    b.Property<string>("Time")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("time");
+                    b.Property<bool>("IsWatched")
+                        .HasColumnType("boolean")
+                        .HasColumnName("is_watched");
 
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("timestamp without time zone")
@@ -61,10 +47,14 @@ namespace Data.PostgreSQL.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("IdTemplateExercise");
+
+                    b.HasIndex("IdTrain");
+
                     b.ToTable("Exercise");
                 });
 
-            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.ExerciseTrain", b =>
+            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.ExerciseType", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -72,27 +62,20 @@ namespace Data.PostgreSQL.Migrations
                         .HasColumnName("id")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<DateTime>("CreationDate")
-                        .HasColumnType("timestamp without time zone")
-                        .HasColumnName("dta_creation");
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)")
+                        .HasColumnName("name");
 
-                    b.Property<int>("IdExercise")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("IdTrain")
-                        .HasColumnType("integer");
-
-                    b.Property<DateTime>("UpdateDate")
-                        .HasColumnType("timestamp without time zone")
-                        .HasColumnName("dta_updated");
+                    b.Property<string>("UrlVideo")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("url_video");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("IdExercise");
-
-                    b.HasIndex("IdTrain");
-
-                    b.ToTable("ExerciseTrain");
+                    b.ToTable("ExerciseType");
                 });
 
             modelBuilder.Entity("Domain.Models.PostgreSql.Entities.Module", b =>
@@ -107,15 +90,19 @@ namespace Data.PostgreSQL.Migrations
                         .HasColumnType("timestamp without time zone")
                         .HasColumnName("dta_creation");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)")
-                        .HasColumnName("name");
+                    b.Property<DateTime?>("DtaEnd")
+                        .HasColumnType("timestamp without time zone")
+                        .HasColumnName("dta_end");
 
-                    b.Property<int>("Type")
-                        .HasColumnType("integer")
-                        .HasColumnName("type");
+                    b.Property<DateTime?>("DtaStart")
+                        .HasColumnType("timestamp without time zone")
+                        .HasColumnName("dta_start");
+
+                    b.Property<int>("IdTemplateModule")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("IdUser")
+                        .HasColumnType("integer");
 
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("timestamp without time zone")
@@ -123,7 +110,126 @@ namespace Data.PostgreSQL.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("IdTemplateModule");
+
+                    b.HasIndex("IdUser");
+
                     b.ToTable("Module");
+                });
+
+            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.TemplateExercise", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("id")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<int>("BreakTime")
+                        .HasColumnType("integer")
+                        .HasColumnName("break_time");
+
+                    b.Property<int>("Frequency")
+                        .HasColumnType("integer")
+                        .HasColumnName("frequency");
+
+                    b.Property<int>("IdExerciseType")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("IdTemplateTrain")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Sets")
+                        .HasColumnType("integer")
+                        .HasColumnName("sets");
+
+                    b.Property<int>("Time")
+                        .HasColumnType("integer")
+                        .HasColumnName("time");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdExerciseType");
+
+                    b.HasIndex("IdTemplateTrain");
+
+                    b.ToTable("TemplateExercise");
+                });
+
+            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.TemplateModule", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("id")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<bool>("IsLocked")
+                        .HasColumnType("boolean")
+                        .HasColumnName("is_locked");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)")
+                        .HasColumnName("name");
+
+                    b.Property<int>("Order")
+                        .HasColumnType("integer")
+                        .HasColumnName("order");
+
+                    b.Property<int>("Type")
+                        .HasColumnType("integer")
+                        .HasColumnName("type");
+
+                    b.Property<int>("UserFrenquency")
+                        .HasColumnType("integer")
+                        .HasColumnName("user_frenquency");
+
+                    b.Property<int>("UserLevel")
+                        .HasColumnType("integer")
+                        .HasColumnName("user_level");
+
+                    b.Property<int>("UserObjective")
+                        .HasColumnType("integer")
+                        .HasColumnName("user_objective");
+
+                    b.Property<int>("UserSexo")
+                        .HasColumnType("integer")
+                        .HasColumnName("user_sexo");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TemplateModule");
+                });
+
+            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.TemplateTrain", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("id")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<string>("Cover_Page")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("cover_page");
+
+                    b.Property<int>("IdTemplateModule")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)")
+                        .HasColumnName("name");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdTemplateModule");
+
+                    b.ToTable("TemplateTrain");
                 });
 
             modelBuilder.Entity("Domain.Models.PostgreSql.Entities.Train", b =>
@@ -134,47 +240,23 @@ namespace Data.PostgreSQL.Migrations
                         .HasColumnName("id")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<string>("CoverPage")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("cover_page");
-
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("timestamp without time zone")
                         .HasColumnName("dta_creation");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)")
-                        .HasColumnName("name");
-
-                    b.Property<DateTime>("UpdateDate")
+                    b.Property<DateTime?>("DtaFinished")
                         .HasColumnType("timestamp without time zone")
-                        .HasColumnName("dta_updated");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Train");
-                });
-
-            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.TrainModule", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("id")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
-
-                    b.Property<DateTime>("CreationDate")
-                        .HasColumnType("timestamp without time zone")
-                        .HasColumnName("dta_creation");
+                        .HasColumnName("dta_finished");
 
                     b.Property<int>("IdModule")
                         .HasColumnType("integer");
 
-                    b.Property<int>("IdTrain")
+                    b.Property<int>("IdTemplateTrain")
                         .HasColumnType("integer");
+
+                    b.Property<bool>("IsFinished")
+                        .HasColumnType("boolean")
+                        .HasColumnName("dta_start");
 
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("timestamp without time zone")
@@ -184,9 +266,9 @@ namespace Data.PostgreSQL.Migrations
 
                     b.HasIndex("IdModule");
 
-                    b.HasIndex("IdTrain");
+                    b.HasIndex("IdTemplateTrain");
 
-                    b.ToTable("TrainModule");
+                    b.ToTable("Train");
                 });
 
             modelBuilder.Entity("Domain.Models.PostgreSql.Entities.User", b =>
@@ -261,272 +343,121 @@ namespace Data.PostgreSQL.Migrations
                     b.ToTable("User");
                 });
 
-            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.UserExercise", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("id")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
-
-                    b.Property<DateTime>("CreationDate")
-                        .HasColumnType("timestamp without time zone")
-                        .HasColumnName("dta_creation");
-
-                    b.Property<DateTime>("DtaEnd")
-                        .HasColumnType("timestamp without time zone")
-                        .HasColumnName("dta_end");
-
-                    b.Property<DateTime>("DtaStart")
-                        .HasColumnType("timestamp without time zone")
-                        .HasColumnName("dta_start");
-
-                    b.Property<int>("IdExercise")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("IdUser")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("IdUserTrain")
-                        .HasColumnType("integer");
-
-                    b.Property<DateTime>("UpdateDate")
-                        .HasColumnType("timestamp without time zone")
-                        .HasColumnName("dta_updated");
-
-                    b.Property<bool>("Watched")
-                        .HasColumnType("boolean")
-                        .HasColumnName("watched");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IdExercise");
-
-                    b.HasIndex("IdUser");
-
-                    b.HasIndex("IdUserTrain");
-
-                    b.ToTable("UserExercise");
-                });
-
-            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.UserModule", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("id")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
-
-                    b.Property<DateTime>("CreationDate")
-                        .HasColumnType("timestamp without time zone")
-                        .HasColumnName("dta_creation");
-
-                    b.Property<DateTime>("DtaEnd")
-                        .HasColumnType("timestamp without time zone")
-                        .HasColumnName("dta_end");
-
-                    b.Property<DateTime>("DtaStart")
-                        .HasColumnType("timestamp without time zone")
-                        .HasColumnName("dta_start");
-
-                    b.Property<int>("IdModule")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("IdUser")
-                        .HasColumnType("integer");
-
-                    b.Property<bool>("IsLocked")
-                        .HasColumnType("boolean")
-                        .HasColumnName("is_locked");
-
-                    b.Property<DateTime>("UpdateDate")
-                        .HasColumnType("timestamp without time zone")
-                        .HasColumnName("dta_updated");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IdModule");
-
-                    b.HasIndex("IdUser");
-
-                    b.ToTable("UserModule");
-                });
-
-            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.UserTrain", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("id")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
-
-                    b.Property<DateTime>("CreationDate")
-                        .HasColumnType("timestamp without time zone")
-                        .HasColumnName("dta_creation");
-
-                    b.Property<int>("IdTrain")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("IdUser")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("IdUserModule")
-                        .HasColumnType("integer");
-
-                    b.Property<bool>("IsFinished")
-                        .HasColumnType("boolean")
-                        .HasColumnName("is_finished");
-
-                    b.Property<DateTime>("LastAcess")
-                        .HasColumnType("timestamp without time zone")
-                        .HasColumnName("last_acess");
-
-                    b.Property<DateTime>("UpdateDate")
-                        .HasColumnType("timestamp without time zone")
-                        .HasColumnName("dta_updated");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IdTrain");
-
-                    b.HasIndex("IdUser");
-
-                    b.HasIndex("IdUserModule");
-
-                    b.ToTable("UserTrain");
-                });
-
-            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.ExerciseTrain", b =>
-                {
-                    b.HasOne("Domain.Models.PostgreSql.Entities.Exercise", "Exercise")
-                        .WithMany("ExerciseTrains")
-                        .HasForeignKey("IdExercise")
-                        .IsRequired();
-
-                    b.HasOne("Domain.Models.PostgreSql.Entities.Train", "Train")
-                        .WithMany()
-                        .HasForeignKey("IdTrain")
-                        .IsRequired();
-
-                    b.Navigation("Exercise");
-
-                    b.Navigation("Train");
-                });
-
-            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.TrainModule", b =>
-                {
-                    b.HasOne("Domain.Models.PostgreSql.Entities.Module", "Module")
-                        .WithMany()
-                        .HasForeignKey("IdModule")
-                        .IsRequired();
-
-                    b.HasOne("Domain.Models.PostgreSql.Entities.Train", "Train")
-                        .WithMany("TrainModules")
-                        .HasForeignKey("IdTrain")
-                        .IsRequired();
-
-                    b.Navigation("Module");
-
-                    b.Navigation("Train");
-                });
-
-            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.UserExercise", b =>
-                {
-                    b.HasOne("Domain.Models.PostgreSql.Entities.Exercise", "Exercise")
-                        .WithMany()
-                        .HasForeignKey("IdExercise")
-                        .IsRequired();
-
-                    b.HasOne("Domain.Models.PostgreSql.Entities.User", "User")
-                        .WithMany("UserExercises")
-                        .HasForeignKey("IdUser")
-                        .IsRequired();
-
-                    b.HasOne("Domain.Models.PostgreSql.Entities.UserTrain", "UserTrain")
-                        .WithMany("UserExercises")
-                        .HasForeignKey("IdUserTrain")
-                        .IsRequired();
-
-                    b.Navigation("Exercise");
-
-                    b.Navigation("User");
-
-                    b.Navigation("UserTrain");
-                });
-
-            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.UserModule", b =>
-                {
-                    b.HasOne("Domain.Models.PostgreSql.Entities.Module", "Module")
-                        .WithMany("UserModules")
-                        .HasForeignKey("IdModule")
-                        .IsRequired();
-
-                    b.HasOne("Domain.Models.PostgreSql.Entities.User", "User")
-                        .WithMany("UserModules")
-                        .HasForeignKey("IdUser")
-                        .IsRequired();
-
-                    b.Navigation("Module");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.UserTrain", b =>
-                {
-                    b.HasOne("Domain.Models.PostgreSql.Entities.Train", "Train")
-                        .WithMany()
-                        .HasForeignKey("IdTrain")
-                        .IsRequired();
-
-                    b.HasOne("Domain.Models.PostgreSql.Entities.User", "User")
-                        .WithMany("UserTrains")
-                        .HasForeignKey("IdUser")
-                        .IsRequired();
-
-                    b.HasOne("Domain.Models.PostgreSql.Entities.UserModule", "UserModule")
-                        .WithMany("UserTrains")
-                        .HasForeignKey("IdUserModule")
-                        .IsRequired();
-
-                    b.Navigation("Train");
-
-                    b.Navigation("User");
-
-                    b.Navigation("UserModule");
-                });
-
             modelBuilder.Entity("Domain.Models.PostgreSql.Entities.Exercise", b =>
                 {
-                    b.Navigation("ExerciseTrains");
+                    b.HasOne("Domain.Models.PostgreSql.Entities.TemplateExercise", "TemplateExercise")
+                        .WithMany("Modules")
+                        .HasForeignKey("IdTemplateExercise")
+                        .IsRequired();
+
+                    b.HasOne("Domain.Models.PostgreSql.Entities.Train", "Train")
+                        .WithMany("Modules")
+                        .HasForeignKey("IdTrain")
+                        .IsRequired();
+
+                    b.Navigation("TemplateExercise");
+
+                    b.Navigation("Train");
                 });
 
             modelBuilder.Entity("Domain.Models.PostgreSql.Entities.Module", b =>
                 {
-                    b.Navigation("UserModules");
+                    b.HasOne("Domain.Models.PostgreSql.Entities.TemplateModule", "TemplateModule")
+                        .WithMany("Modules")
+                        .HasForeignKey("IdTemplateModule")
+                        .IsRequired();
+
+                    b.HasOne("Domain.Models.PostgreSql.Entities.User", "User")
+                        .WithMany("Modules")
+                        .HasForeignKey("IdUser")
+                        .IsRequired();
+
+                    b.Navigation("TemplateModule");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.TemplateExercise", b =>
+                {
+                    b.HasOne("Domain.Models.PostgreSql.Entities.ExerciseType", "ExerciseType")
+                        .WithMany("TemplateExercises")
+                        .HasForeignKey("IdExerciseType")
+                        .IsRequired();
+
+                    b.HasOne("Domain.Models.PostgreSql.Entities.TemplateTrain", "TemplateTrain")
+                        .WithMany("TemplateExercises")
+                        .HasForeignKey("IdTemplateTrain")
+                        .IsRequired();
+
+                    b.Navigation("ExerciseType");
+
+                    b.Navigation("TemplateTrain");
+                });
+
+            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.TemplateTrain", b =>
+                {
+                    b.HasOne("Domain.Models.PostgreSql.Entities.TemplateModule", "TemplateModule")
+                        .WithMany("TemplateTrains")
+                        .HasForeignKey("IdTemplateModule")
+                        .IsRequired();
+
+                    b.Navigation("TemplateModule");
                 });
 
             modelBuilder.Entity("Domain.Models.PostgreSql.Entities.Train", b =>
                 {
-                    b.Navigation("TrainModules");
+                    b.HasOne("Domain.Models.PostgreSql.Entities.Module", "Module")
+                        .WithMany("Trains")
+                        .HasForeignKey("IdModule")
+                        .IsRequired();
+
+                    b.HasOne("Domain.Models.PostgreSql.Entities.TemplateTrain", "TemplateTrain")
+                        .WithMany("Trains")
+                        .HasForeignKey("IdTemplateTrain")
+                        .IsRequired();
+
+                    b.Navigation("Module");
+
+                    b.Navigation("TemplateTrain");
+                });
+
+            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.ExerciseType", b =>
+                {
+                    b.Navigation("TemplateExercises");
+                });
+
+            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.Module", b =>
+                {
+                    b.Navigation("Trains");
+                });
+
+            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.TemplateExercise", b =>
+                {
+                    b.Navigation("Modules");
+                });
+
+            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.TemplateModule", b =>
+                {
+                    b.Navigation("Modules");
+
+                    b.Navigation("TemplateTrains");
+                });
+
+            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.TemplateTrain", b =>
+                {
+                    b.Navigation("TemplateExercises");
+
+                    b.Navigation("Trains");
+                });
+
+            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.Train", b =>
+                {
+                    b.Navigation("Modules");
                 });
 
             modelBuilder.Entity("Domain.Models.PostgreSql.Entities.User", b =>
                 {
-                    b.Navigation("UserExercises");
-
-                    b.Navigation("UserModules");
-
-                    b.Navigation("UserTrains");
-                });
-
-            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.UserModule", b =>
-                {
-                    b.Navigation("UserTrains");
-                });
-
-            modelBuilder.Entity("Domain.Models.PostgreSql.Entities.UserTrain", b =>
-                {
-                    b.Navigation("UserExercises");
+                    b.Navigation("Modules");
                 });
 #pragma warning restore 612, 618
         }

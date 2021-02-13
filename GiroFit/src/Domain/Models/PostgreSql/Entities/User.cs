@@ -1,12 +1,13 @@
 ﻿using Domain.Enumerators;
 using Domain.Models.PostgreSql.Entities.Base;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Domain.Models.PostgreSql.Entities {
 
-    public class User : BaseEntity {
+    public class User : BaseEntityWithoutDate {
 
         [Required()]
         [Column("name")]
@@ -54,11 +55,16 @@ namespace Domain.Models.PostgreSql.Entities {
         [Column("flg_inativo")]
         public bool FlgInativo { get; set; }
 
+        [Required()]
+        [Column("dta_creation")]
+        public DateTime CreationDate { get; set; }
+
+        [Required()]
+        [Column("dta_updated")]
+        public DateTime UpdateDate { get; set; }
+
         /* EF Relations */
-        public virtual List<UserModule> UserModules { get; set; }
+        public virtual List<Module> Modules { get; set; }
 
-        public virtual List<UserTrain> UserTrains { get; set; }
-
-        public virtual List<UserExercise> UserExercises { get; set; }
     }
 }

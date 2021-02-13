@@ -6,3 +6,4 @@ C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\Domain.Core\obj\Deb
 C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\Domain.Core\obj\Debug\netcoreapp3.1\Domain.Core.csproj.CoreCompileInputs.cache
 C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\Domain.Core\obj\Debug\netcoreapp3.1\Domain.Core.dll
 C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\Domain.Core\obj\Debug\netcoreapp3.1\Domain.Core.pdb
+C:\Users\marccustramontin\source\pessoal\GiroFit\GiroFit\src\Domain.Core\obj\Debug\netcoreapp3.1\Domain.Core.csprojAssemblyReference.cache

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Interfaces.Repositories.Base {
 
-    public interface IBaseRepository<TEntity> : IDisposable where TEntity : BaseEntity {
+    public interface IBaseRepository<TEntity> : IDisposable where TEntity : BaseEntityWithoutDate {
         Task<List<TEntity>> GetAll();
         Task<TEntity> GetById(int id);
         Task<TEntity> Insert(TEntity item);

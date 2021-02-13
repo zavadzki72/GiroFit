@@ -5,6 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ApplicationService.Interfaces {
-    public interface ITreinoApplicationService {
+
+    public interface IModuleApplicationService {
+
+
+
     }
 }

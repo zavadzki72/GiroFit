@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Data.PostgreSQL.Repositories.Base {
 
-    public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : BaseEntity, new() {
+    public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : BaseEntityWithoutDate, new() {
 
         protected readonly ApplicationDbContext DbContext;
         private readonly IMediatorHandler _bus;
