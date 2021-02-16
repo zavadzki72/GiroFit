@@ -48,6 +48,28 @@ namespace WebApi.Controllers {
         }
 
         /// <summary>
+        ///     Pega um usuario pelo ID trazendo tbm a estrutura de modulos
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Usuario</returns>
+        /// <response code="200">Objeto de retorno</response>
+        /// <response code="400">Algum campo está invalido ou nullo</response>
+        /// <response code="404">Objeto nao encontrado</response>
+        /// <response code="500">Ocorreu algum erro interno</response> 
+        [HttpGet]
+        [Route("GetByIdWithModules/{id}")]
+        [ProducesResponseType(typeof(UserResponseViewModel), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<ActionResult<UserResponseViewModel>> GetByIdWithModules(int id) {
+
+            var response = await _userApplicationService.GetByIdWithModules(id);
+
+            return Response(response);
+        }
+
+        /// <summary>
         ///     Cria um novo usuario
         /// </summary>
         /// <param name="userViewModel"></param>

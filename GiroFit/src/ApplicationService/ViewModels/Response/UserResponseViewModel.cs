@@ -1,4 +1,5 @@
 ﻿using Domain.Enumerators;
+using System.Collections.Generic;
 
 namespace ApplicationService.ViewModels.Response {
 
@@ -25,6 +26,8 @@ namespace ApplicationService.ViewModels.Response {
         public UserLevel Level { get; set; }
 
         public bool FlgInativo { get; set; }
+
+        public List<ModuleResponse> Modules { get; set; }
 
     }
 }

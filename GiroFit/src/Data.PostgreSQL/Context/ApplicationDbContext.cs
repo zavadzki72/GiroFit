@@ -24,6 +24,7 @@ namespace Data.PostgreSQL.Context {
         public DbSet<TemplateModule> TemplateModule { get; set; }
         public DbSet<TemplateTrain> TemplateTrain { get; set; }
         public DbSet<TemplateExercise> TemplateExercise { get; set; }
+        public DbSet<ExerciseType> ExerciseType { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
 

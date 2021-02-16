@@ -9,7 +9,7 @@ namespace Domain.Models.PostgreSql.Entities {
     public class Train : BaseEntityWithoutDate {
 
         [Required()]
-        [Column("dta_start")]
+        [Column("is_finished")]
         public bool IsFinished { get; set; }
 
         [Column("dta_finished")]

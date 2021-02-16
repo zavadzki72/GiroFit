@@ -57,6 +57,10 @@ namespace CrossCutting.IoC {
             services.AddScoped<ITemplateModuleRepository, TemplateModuleRepository>();
             services.AddScoped<ITemplateTrainRepository, TemplateTrainRepository>();
             services.AddScoped<ITemplateExerciseRepository, TemplateExerciseRepository>();
+            services.AddScoped<IModuleRepository, ModuleRepository>();
+            services.AddScoped<ITrainRepository, TrainRepository>();
+            services.AddScoped<IExerciseRepository, ExerciseRepository>();
+            services.AddScoped<IExerciseTypeRepository, ExerciseTypeRepository>();
 
         }
 

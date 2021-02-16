@@ -15,6 +15,10 @@ namespace Domain.Models.PostgreSql.Entities {
         public DateTime? DtaEnd { get; set; }
 
         [Required()]
+        [Column("is_locked")]
+        public bool IsLocked { get; set; }
+
+        [Required()]
         [Column("dta_creation")]
         public DateTime CreationDate { get; set; }
 

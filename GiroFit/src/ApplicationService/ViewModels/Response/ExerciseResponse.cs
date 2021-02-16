@@ -5,6 +5,8 @@ namespace ApplicationService.ViewModels.Response {
     public class ExerciseResponse {
 
         public int Id { get; set; }
+        public string Name { get; set; }
+        public string UrlVideo { get; set; }
         public int Frequency { get; set; }
         public int Sets { get; set; }
         public int Time { get; set; }

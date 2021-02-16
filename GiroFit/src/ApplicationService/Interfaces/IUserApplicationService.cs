@@ -8,6 +8,8 @@ namespace ApplicationService.Interfaces {
 
         Task<UserResponseViewModel> GetById(int id);
 
+        Task<UserResponseViewModel> GetByIdWithModules(int id);
+
         Task<UserResponseViewModel> Create(CreateUserViewModel userViewModel);
     }
 }
