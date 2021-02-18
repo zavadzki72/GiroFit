@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kPvMB6uRskpyXT/hkueKPswIx8DCr5kVGDbNpASt+zYHH0QTbp4XHefysMz1UH/f195jy5sAwRB2uDJ2I3WSyg==",
+  "dgSpecHash": "/y7F3jNeLqff4LH2OLZNha05Sny2mcXf3lgDzojTwgKqPnyfXuQK+X7GUf2ySalS9FUkTu3WYmS4jV2NabvUZg==",
   "success": true,
   "projectFilePath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
@@ -62,6 +62,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.0.1\\microsoft.netcore.platforms.1.0.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\1.0.1\\microsoft.netcore.targets.1.0.1.nupkg.sha512",
     "C:\\Users\\marccustramontin\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\marccustramontin\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
     "C:\\Users\\marccustramontin\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\marccustramontin\\.nuget\\packages\\npgsql\\5.0.2\\npgsql.5.0.2.nupkg.sha512",
     "C:\\Users\\marccustramontin\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\5.0.2\\npgsql.entityframeworkcore.postgresql.5.0.2.nupkg.sha512",
