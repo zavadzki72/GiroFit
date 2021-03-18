@@ -1,41 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\CrossCutting.IoC\\CrossCutting.IoC.csproj": {}
+    "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\CrossCutting.IoC\\CrossCutting.IoC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\ApplicationService\\ApplicationService.csproj": {
+    "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\ApplicationService\\ApplicationService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\ApplicationService\\ApplicationService.csproj",
+        "projectUniqueName": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\ApplicationService\\ApplicationService.csproj",
         "projectName": "ApplicationService",
-        "projectPath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\ApplicationService\\ApplicationService.csproj",
-        "packagesPath": "C:\\Users\\marccustramontin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\ApplicationService\\obj\\",
+        "projectPath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\ApplicationService\\ApplicationService.csproj",
+        "packagesPath": "C:\\Users\\marccusvtz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\ApplicationService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\marccustramontin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\marccusvtz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain\\Domain.csproj"
+              "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Domain\\Domain.csproj"
               }
             }
           }
@@ -70,42 +68,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\CrossCutting.Bus\\CrossCutting.Bus.csproj": {
+    "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\CrossCutting.Bus\\CrossCutting.Bus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\CrossCutting.Bus\\CrossCutting.Bus.csproj",
+        "projectUniqueName": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\CrossCutting.Bus\\CrossCutting.Bus.csproj",
         "projectName": "CrossCutting.Bus",
-        "projectPath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\CrossCutting.Bus\\CrossCutting.Bus.csproj",
-        "packagesPath": "C:\\Users\\marccustramontin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\CrossCutting.Bus\\obj\\",
+        "projectPath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\CrossCutting.Bus\\CrossCutting.Bus.csproj",
+        "packagesPath": "C:\\Users\\marccusvtz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\CrossCutting.Bus\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\marccustramontin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\marccusvtz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj": {
-                "projectPath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj"
+              "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj": {
+                "projectPath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj"
               }
             }
           }
@@ -129,69 +125,57 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\CrossCutting.IoC\\CrossCutting.IoC.csproj": {
+    "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\CrossCutting.IoC\\CrossCutting.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\CrossCutting.IoC\\CrossCutting.IoC.csproj",
+        "projectUniqueName": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\CrossCutting.IoC\\CrossCutting.IoC.csproj",
         "projectName": "CrossCutting.IoC",
-        "projectPath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\CrossCutting.IoC\\CrossCutting.IoC.csproj",
-        "packagesPath": "C:\\Users\\marccustramontin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\CrossCutting.IoC\\obj\\",
+        "projectPath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\CrossCutting.IoC\\CrossCutting.IoC.csproj",
+        "packagesPath": "C:\\Users\\marccusvtz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\CrossCutting.IoC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\marccustramontin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\marccusvtz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\ApplicationService\\ApplicationService.csproj": {
-                "projectPath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\ApplicationService\\ApplicationService.csproj"
+              "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\ApplicationService\\ApplicationService.csproj": {
+                "projectPath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\ApplicationService\\ApplicationService.csproj"
               },
-              "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\CrossCutting.Bus\\CrossCutting.Bus.csproj": {
-                "projectPath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\CrossCutting.Bus\\CrossCutting.Bus.csproj"
+              "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\CrossCutting.Bus\\CrossCutting.Bus.csproj": {
+                "projectPath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\CrossCutting.Bus\\CrossCutting.Bus.csproj"
               },
-              "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Data.PostgreSQL\\Data.PostgreSQL.csproj": {
-                "projectPath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Data.PostgreSQL\\Data.PostgreSQL.csproj"
+              "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Data.PostgreSQL\\Data.PostgreSQL.csproj": {
+                "projectPath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Data.PostgreSQL\\Data.PostgreSQL.csproj"
               },
-              "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj": {
-                "projectPath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj"
+              "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj": {
+                "projectPath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj"
               },
-              "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain\\Domain.csproj"
+              "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Domain\\Domain.csproj"
               }
             }
           }
@@ -242,45 +226,43 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Data.PostgreSQL\\Data.PostgreSQL.csproj": {
+    "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Data.PostgreSQL\\Data.PostgreSQL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Data.PostgreSQL\\Data.PostgreSQL.csproj",
+        "projectUniqueName": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Data.PostgreSQL\\Data.PostgreSQL.csproj",
         "projectName": "Data.PostgreSQL",
-        "projectPath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Data.PostgreSQL\\Data.PostgreSQL.csproj",
-        "packagesPath": "C:\\Users\\marccustramontin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Data.PostgreSQL\\obj\\",
+        "projectPath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Data.PostgreSQL\\Data.PostgreSQL.csproj",
+        "packagesPath": "C:\\Users\\marccusvtz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Data.PostgreSQL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\marccustramontin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\marccusvtz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj": {
-                "projectPath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj"
+              "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj": {
+                "projectPath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj"
               },
-              "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain\\Domain.csproj"
+              "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Domain\\Domain.csproj"
               }
             }
           }
@@ -343,35 +325,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj": {
+    "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj",
+        "projectUniqueName": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj",
         "projectName": "Domain.Core",
-        "projectPath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj",
-        "packagesPath": "C:\\Users\\marccustramontin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain.Core\\obj\\",
+        "projectPath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj",
+        "packagesPath": "C:\\Users\\marccusvtz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Domain.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\marccustramontin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\marccusvtz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -408,57 +388,45 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain\\Domain.csproj": {
+    "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\marccustramontin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\marccusvtz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\marccustramontin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\marccusvtz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/AzureDevOps-BNE/_packaging/BNE/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj": {
-                "projectPath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj"
+              "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj": {
+                "projectPath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj"
               }
             }
           }
@@ -493,7 +461,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

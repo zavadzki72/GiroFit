@@ -4,9 +4,13 @@ using ApplicationService.ViewModels.Response;
 using Domain.Core.Bus;
 using Domain.Core.Notifications;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using WebApi.Controllers.Base;
 
@@ -23,6 +27,47 @@ namespace WebApi.Controllers {
             IUserApplicationService userApplicationService
         ) : base(notifications, bus) {
             _userApplicationService = userApplicationService;
+        }
+
+        /// <summary>
+        ///     Verificar se um usuario está autenticado
+        /// </summary>
+        /// <response code="202">Usuario está autenticado</response>
+        /// <response code="401">Usuario não está autenticado</response>
+        [HttpGet]
+        [Authorize]
+        [Route("IsAuth")]
+        [ProducesResponseType(StatusCodes.Status202Accepted)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        public IActionResult IsAuth()
+        {
+            return Accepted();
+        }
+
+        /// <summary>
+        ///     Pega a informação de um usuario a partir do Token dele
+        /// </summary>
+        /// <response code="200">Usuario está autenticado</response>
+        /// <response code="401">Usuario não está autenticado</response>
+        [HttpGet]
+        [Authorize]
+        [Route("GetUserInfo")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        public IActionResult GetUserInfo()
+        {
+            var firebase = User.Claims.FirstOrDefault(x => x.Type == "firebase").Value;
+
+            //REFATORA ISSO PFVR
+            var regexMatch = Regex.Match(firebase, "email.{4}(?<email>.*?\\\")");
+            string email = regexMatch.Groups["email"].Value.Replace("\"", "");
+
+            return Ok(new {
+                Id = User.Claims.FirstOrDefault(x => x.Type == "user_id").Value,
+                Name = User.Claims.FirstOrDefault(x => x.Type == "name").Value,
+                Picture = User.Claims.FirstOrDefault(x => x.Type == "picture").Value,
+                Email = email
+            });
         }
 
         /// <summary>

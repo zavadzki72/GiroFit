@@ -1,0 +1,49 @@
+﻿<html>
+
+<head>
+    <title>FirebaseAuth</title>
+</head>
+
+<body>
+    <button onclick="login()">LOGIN COM GOOGLE</button>
+
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCuqn7vhkILD9pTJ8YaTF98x1Hno4uFc-M",
+            authDomain: "girofit-fbddb.firebaseapp.com",
+            projectId: "girofit-fbddb",
+            storageBucket: "girofit-fbddb.appspot.com",
+            messagingSenderId: "899254289700",
+            appId: "1:899254289700:web:5f5ed57bed33b990b4dfb1",
+            measurementId: "G-Q5FMWSPPT6"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        var provider = new firebase.auth.GoogleAuthProvider();
+        provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+        function login() {
+            firebase.auth().signInWithPopup(provider).then(function (result) {
+                // ESTE NÃO É O JWT, É O TOKEN PARA OBTER INFOS DO GOOGLE
+                var token = result.credential.accessToken;
+                var user = result.user;
+                firebase.auth()
+                    .currentUser
+                    .getIdToken()
+                    .then((idToken) => {
+                        // ESTE É O TOKEN JWT QUE VAMOS MANDAR PARA API
+                        console.log(idToken);
+                    }).catch(function (error) {
+                        console.log(error);
+                    });
+            }).catch(function (error) {
+                // DEU RUIM
+                console.log(error);
+            });
+        }
+    </script>
+</body>
+
+</html>

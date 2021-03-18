@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "Ql1Ed/jWylJgo32y3+qVtUMc5tCiZdeZfqbL1XF3awKbbG3OxR0yDS+8mN4e+qajXXja2hFl9VUxoEAfI9sG8g==",
+  "dgSpecHash": "X9zA33z4petlxYLHshLn7yp5OarCbuAV3cHwhKJAuasuYc+EN0S4nI99MvD1xAQkRF3abyeyB7fuBf0t5Wi+9A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\ApplicationService\\ApplicationService.csproj",
+  "projectFilePath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\ApplicationService\\ApplicationService.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\marccustramontin\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
-    "C:\\Users\\marccustramontin\\.nuget\\packages\\fluentvalidation\\9.3.0\\fluentvalidation.9.3.0.nupkg.sha512",
-    "C:\\Users\\marccustramontin\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
-    "C:\\Users\\marccustramontin\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\marccustramontin\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\marccustramontin\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+    "C:\\Users\\marccusvtz\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\marccusvtz\\.nuget\\packages\\fluentvalidation\\9.3.0\\fluentvalidation.9.3.0.nupkg.sha512",
+    "C:\\Users\\marccusvtz\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\marccusvtz\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\marccusvtz\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\marccusvtz\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

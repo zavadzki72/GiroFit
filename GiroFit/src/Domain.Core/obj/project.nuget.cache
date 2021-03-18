@@ -1,13 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "PbCsfpFkq9FX2e6W4+GLCmzua85vHcRSqe6rhKouf2muf8Qlx9N78hf4Zgaa7Ki6QzPHv7ha4gJyZyUtv0Bbuw==",
+  "dgSpecHash": "BtYGc61kkb4yRu5yGeDbADRc68KZWg3x1vX599fkh0aSpCtsEPsdsOrJHh3Kxmn3rh8Fr4MFFvvOgKDj7afZFA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\marccustramontin\\source\\pessoal\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj",
+  "projectFilePath": "C:\\Users\\marccusvtz\\source\\repos\\Estudos\\GiroFit\\GiroFit\\src\\Domain.Core\\Domain.Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\marccustramontin\\.nuget\\packages\\fluentvalidation\\9.3.0\\fluentvalidation.9.3.0.nupkg.sha512",
-    "C:\\Users\\marccustramontin\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
-    "C:\\Users\\marccustramontin\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\marccustramontin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512"
+    "C:\\Users\\marccusvtz\\.nuget\\packages\\fluentvalidation\\9.3.0\\fluentvalidation.9.3.0.nupkg.sha512",
+    "C:\\Users\\marccusvtz\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
   ],
   "logs": []
 }
